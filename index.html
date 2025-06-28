@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Store - Vente en ligne</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #e0e0e0;
+      color: #2e2e2e;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      color: green;
+      font-weight: bold;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 3px solid #ccc;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #219150;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JUSS STORE RDC</h1>
+    <h3>Achetez les meilleurs iPhones à prix réduit</h3>
+    <h4>-La qualité Rassurée-</h4>
+  </header>
+
+  <nav>
+    <a href="#produits">Produits</a>
+    <a href="#commande">Commander</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="produits">
+    <h2 style="text-align: center; margin-bottom: 30px;">Nos IPhones Disponibles</h2>
+    <div class="products">
+      <div class="product">
+        <img src="Image juss/XR 64.jpg" alt="iPhone Xr 64G" />
+        <h3>iPhone Xr 64G</h3>
+        <p>210 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/XR 128.jpg" alt="iPhone XR 128G" />
+        <h3>iPhone XR 128G</h3>
+        <p>250 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 64G V.jpg" alt="iPhone 11 64G" />
+        <h3>iPhone 11 64G</h3>
+        <p>270 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 64.jpg" alt="iPhone 11 128G" />
+        <h3>iPhone 11 128G</h3>
+        <p>290 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 PRO 64.jpg" alt="iPhone 11 Pro 64G" />
+        <h3>iPhone 11 Pro 64G</h3>
+        <p>330 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 pro 256 V.jpg" alt="iPhone 11 Pro 256G" />
+        <h3>iPhone 11 Pro 256G</h3>
+        <p>350 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 PRO MAX 64.jpg" alt="iPhone 11 Pro Max 64G" />
+        <h3>iPhone 11 Pro Max 64G</h3>
+        <p>360 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/11 PRO MAX 256.jpg" alt="iPhone 11 Pro Max 256G" />
+        <h3>iPhone 11 Pro Max 256G</h3>
+        <p>390 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/12 64.jpg" alt="iPhone 12 64G" />
+        <h3>iPhone 12 64G</h3>
+        <p>330 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/12 128 V.jpg" alt="iPhone 12 128G" />
+        <h3>iPhone 12 128G</h3>
+        <p>360 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/12 PRO 128.jpg" alt="iPhone 12 Pro 128G" />
+        <h3>iPhone 12 Pro 128G</h3>
+        <p>470 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/12 PRO 256.jpg" alt="iPhone 12 Pro Max 128G" />
+        <h3>iPhone 12 Pro Max 128G</h3>
+        <p>540 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/12 PRO MAX128.jpg" alt="iPhone 12 Pro Max 256G" />
+        <h3>iPhone 12 Pro Max 256G</h3>
+        <p>580 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 64.jpg" alt="iPhone 13 64G" />
+        <h3>iPhone 13 64G</h3>
+        <p>500 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 128.jpg" alt="iPhone 13 128G" />
+        <h3>iPhone 13 128G</h3>
+        <p>550 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 PRO 128.jpg" alt="iPhone 13 Pro 128G" />
+        <h3>iPhone 13 Pro 128G</h3>
+        <p>630 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 PRO 256.jpg" alt="iPhone 13 Pro 256G" />
+        <h3>iPhone 13 Pro 256G</h3>
+        <p>670 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 PRO MAX 128.jpg" alt="iPhone 13 Pro Max 128G" />
+        <h3>iPhone 13 Pro Max 128G</h3>
+        <p>700 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/13 PRO MAX 5 V.jpg" alt="iPhone 13 Pro Max 256G" />
+        <h3>iPhone 13 Pro Max 256G</h3>
+        <p>750 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/14 128.jpg" alt="iPhone 14 128G" />
+        <h3>iPhone 14 128G</h3>
+        <p>700 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/14 128.jpg" alt="iPhone 14 256G" />
+        <h3>iPhone 14 256G</h3>
+        <p>750 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/14 PRO 256.jpg" alt="iPhone 14 Pro 256G" />
+        <h3>iPhone 14 Pro 256G</h3>
+        <p>800 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/14 PRO MAX512.jpg" alt="iPhone 14 Pro Max 512G" />
+        <h3>iPhone 14 Pro Max 512G</h3>
+        <p>930 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/15 256.jpg" alt="iPhone 15 256G" />
+        <h3>iPhone 15 256G</h3>
+        <p>840 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/15 PRO 128.jpg" alt="iPhone 15 Pro 128G" />
+        <h3>iPhone 15 Pro 128G</h3>
+        <p>1050 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/15 PRO 256.jpg" alt="iPhone 15 Pro 256G" />
+        <h3>iPhone 15 Pro 256G</h3>
+        <p>1100 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/15 PRO MAX 256.jpg" alt="iPhone 15 Pro Max 256G" />
+        <h3>iPhone 15 Pro Max 256G</h3>
+        <p>1150 $</p>
+      </div>
+      <div class="product">
+        <img src="Image juss/16 128.jpg" alt="iPhone 16 128G" />
+        <h3>iPhone 16 128G</h3>
+        <p>1030 $</p>
+      </div>
+       <div class="product">
+        <img src="Image juss/16 256.jpg" alt="iPhone 16 256G" />
+        <h3>iPhone 16 256G</h3>
+        <p>1080 $</p>
+      </div>
+       <div class="product">
+        <img src="Image juss/16 PRO 256.jpg" alt="iPhone 16 Pro 256G" />
+        <h3>iPhone 16 Pro 256G</h3>
+        <p>1290 $</p>
+      </div>
+       <div class="product">
+        <img src="Image juss/16 pro max 512 V.jpg" alt="iPhone 16 Pro Max 512G" />
+        <h3>iPhone 16 Pro Max 512G</h3>
+        <p>1650 $</p>
+      </div>
+    </div>
+  </section>
+  <section id="commande">
+    <form id="orderForm">
+      <h2>Commander un iPhone</h2>
+      <input type="text" id="nom" placeholder="Votre nom complet" required />
+      <input type="tel" id="tel" placeholder="Numéro WhatsApp" required />
+      <input type="text" id="couleur" placeholder="Couleur d'iphone" required />
+      <select id="modele" required>
+        <option value="">-- Choisissez un modèle --</option>
+        <option value="iPhone Xr 64G">iPhone Xr 64G - 250$</option>
+        <option value="iPhone XR 128G">iPhone XR 128G - 230$</option>
+        <option value="iPhone 11 64G">iPhone 11 64G - 270$</option>
+        <option value="iPhone 11 Pro 64G">iPhone 11 Pro 64G- 250$</option>
+        <option value="iPhone 11 Pro 256G">iPhone 11 Pro 256G - 350$</option>
+        <option value="iPhone 11 Pro Max 64G">iPhone 11 Pro Max 64G - 360$</option>
+        <option value="iPhone 11 Pro Max 256G">iPhone 11 Pro Max 256G - 390$</option>
+        <option value="iPhone 12 64G">iPhone 12 64G - 330$</option>
+        <option value="iPhone 12 128G">iPhone 12 128G - 360$</option>
+        <option value="iPhone 12 Pro 128G">iPhone 12 Pro 128G - 470$</option>
+        <option value="iPhone 12 Pro Max 128G">iPhone 12 Pro Max 128G - 540$</option>
+        <option value="iPhone 12 Pro Max 256G">iPhone 12 Pro Max 256G - 580$</option>
+        <option value="iPhone 13 64G">iPhone 13 64G - 500$</option>
+        <option value="iPhone 13 128G">iPhone 13 128G - 550$</option>
+        <option value="iPhone 13 Pro 128G">iPhone 13 Pro 128G - 630$</option>
+        <option value="iPhone 13 Pro 256G">iPhone 13 Pro 256G - 670$</option>
+        <option value="iPhone 13 Pro Max 128G">iPhone 13 Pro Max 128G - 700$</option>
+        <option value="iPhone 13 Pro Max 256G">iPhone 13 Pro Max 256G - 750$</option>
+        <option value="iPhone 14 128G">iPhone 14 128G - 700$</option>
+        <option value="iPhone 14 256G">iPhone 14 256G - 750$</option>
+        <option value="iPhone 14 Pro 256G">iPhone 14 Pro 256G - 800$</option>
+        <option value="iPhone 14 Pro Max 512G">iPhone 14 Pro Max 512G - 930$</option>
+        <option value="iPhone 15 256G">iPhone 15 256G - 840$</option>
+        <option value="iPhone 15 Pro 128G">iPhone 15 Pro 128G - 840$</option>
+        <option value="iPhone 15 Pro 128G">iPhone 15 Pro 128G - 1050$</option>
+        <option value="iPhone 15 Pro 256G">iPhone 15 Pro 256G - 1100$</option>
+        <option value="iPhone 15 Pro Max 256G">iPhone 15 Pro Max 256G - 1150$</option>
+        <option value="iPhone 16 128G">iPhone 16 128G - 1030$</option>
+        <option value="iPhone 16 256G">iPhone 16 256G - 1080$</option>
+        <option value="iPhone 16 Pro 256G">iPhone 16 Pro 256G - 1290$</option>
+        <option value="iPhone 16 Pro Max 512G">iPhone 16 Pro Max 512G - 1650$</option>
+      </select>
+      <textarea id="adresse" placeholder="Adresse de livraison complète" rows="4" required></textarea>
+      <button type="submit">Commander via WhatsApp</button> 
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Contact : +243 819899358 | WhatsApp & appels disponibles</p>
+    <p>Adresse : KINSHASA LEMBA.AV:LUBEFU N°:24 Q/LEMBA FOIRE REF:DEUXIEME PORTE FIKIN</p>
+    <p>&copy; 2025 Juss Store - Tous droits réservés</p>
+  </footer>
+
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nom = document.getElementById("nom").value;
+      const tel = document.getElementById("tel").value;
+      const modele = document.getElementById("modele").value;
+      const adresse = document.getElementById("adresse").value;
+
+      const message = `Bonjour, je m'appelle ${nom}. Je souhaite commander un ${modele}. Voici mon numéro WhatsApp : ${tel}. Adresse de livraison : ${adresse}. Merci.`;
+
+      const numeroWhatsApp = "243819899358"; // Remplace ce numéro par le tien sans le + (ex: 243812345678)
+      const lien = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(message)}`;
+      
+      window.open(lien, '_blank');
+    });
+  </script>
+
+</body>
+</html>
